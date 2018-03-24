@@ -4,12 +4,12 @@ import (
 	"fmt"
 )
 
+var i, j = 42, 2701
+
+// The `&` operator generates a pointer to its operand.
+var p = &i
+
 func main() {
-	i, j := 42, 2701
-
-	// The `&` operator generates a pointer to its operand.
-	p := &i
-
 	// The `*` operator denotes the pointer's underlying value.
 	fmt.Println(*p)
 
