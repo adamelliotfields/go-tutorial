@@ -5,7 +5,7 @@
 .vscode/
 
 # mac
-.idea
+.DS_Store
 
 # kde
 .directory
