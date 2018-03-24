@@ -28,17 +28,36 @@ func split(sum int) (x, y int) {
 	return
 }
 
+// Go functions can be closures as well.
+func fibonacci(f1, f2 int) func() int {
+	var first, second, next int
+
+	// Fibonacci can be seeded with either 0,1 or 1,1
+	first = f1
+	second = f2
+
+	return func() int {
+		next = first
+		first = second
+		second = first + next
+
+		return next
+	}
+}
+
 func main() {
 	sum := compute(add)
-
 	fmt.Printf("The sum of 42 and 42 is %d\n", sum) // The sum of 42 and 42 is 84
 
 	x, y := swap("world", "hello")
-
 	fmt.Println(x, y) // hello world
 
 	a, b := split(17)
+	fmt.Printf("17 split is %d and %d\n", a, b) // 17 split is 7 and 10
 
-	fmt.Println("a:", a) // a: 7
-	fmt.Println("b:", b) // b: 10
+	f := fibonacci(0, 1)
+	fmt.Println("Fibonacci:")
+	for i := 0; i < 10; i++ {
+		fmt.Println(f())
+	}
 }
