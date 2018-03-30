@@ -40,3 +40,13 @@ func main() {
   }
 }
 ```
+
+Variables declared without an initial value are given their _zero_ value.
+
+```go
+var b bool // false
+
+var s string // ""
+
+var i int // 0
+```
