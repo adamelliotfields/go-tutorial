@@ -15,3 +15,15 @@ systems.
 
 When you need an integer, it's recommended to just use `int` unless you have a specific reason for
 using a sized or unsigned integer type.
+
+Unlike C, assignment between items of different type requires an explicit conversion.
+
+```go
+func main() {
+  i := 4
+
+  fmt.Println(math.Sqrt(i)) // Error: cannot use i (type int) as type float64
+
+  fmt.Println(math.Sqrt(float64(i))) // 2
+}
+```
