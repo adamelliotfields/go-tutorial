@@ -1,4 +1,4 @@
-# Ranges
+# Range
 
 The `range` form of the `for` loop iterates over a slice or map.
 
