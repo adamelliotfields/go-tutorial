@@ -7,7 +7,7 @@ parameters share a type, you only need to provide the type to the last one.
 
 ```go
 func add(x, y int) int {
-	return x + y
+  return x + y
 }
 ```
 
@@ -15,7 +15,7 @@ Functions can also be passed to other functions.
 
 ```go
 func compute(fn func(x, y int) int) int {
-	return fn(42, 42)
+  return fn(42, 42)
 }
 ```
 
@@ -23,7 +23,7 @@ Functions can return multiple results.
 
 ```go
 func swap(x, y string) (string, string) {
-	return y, x
+  return y, x
 }
 
 var y, x = swap(42, 42)
@@ -33,10 +33,10 @@ Return values can be "named". A return statement without arguments returns the n
 
 ```go
 func split(sum int) (x, y int) {
-	x = sum * 4 / 9
-	y = sum - x
+  x = sum * 4 / 9
+  y = sum - x
 
-	return
+  return
 }
 ```
 

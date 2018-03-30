@@ -16,12 +16,12 @@ Deferred calls are pushed onto a stack and executed in a last-in-first-out order
 
 ```go
 func deferredCounter() {
-	fmt.Println("Counting...")
+  fmt.Println("Counting...")
 
-	for i := 1; i <= 10; i++ {
-		defer fmt.Println(i) // 10 9 8 7 6 5 4 3 2 1
-	}
+  for i := 1; i <= 10; i++ {
+    defer fmt.Println(i) // 10 9 8 7 6 5 4 3 2 1
+  }
 
-	fmt.Println("Done!")
+  fmt.Println("Done!")
 }
 ```

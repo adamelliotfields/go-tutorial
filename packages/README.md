@@ -15,10 +15,10 @@ Imports can be grouped into a "factored" import statement.
 
 ```go
 import (
-	"fmt"
-	"math"
-	"math/rand"
-	"time"
+  "fmt"
+  "math"
+  "math/rand"
+  "time"
 )
 ```
 

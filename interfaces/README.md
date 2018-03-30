@@ -30,6 +30,6 @@ or any in TypeScript. This works because every type in Go implements at least ze
 ```go
 // Prints the value and type of the underlying type implementing the interface.
 func describe(i interface{}) {
-	fmt.Printf("(%v, %T)\n", i, i)
+  fmt.Printf("(%v, %T)\n", i, i)
 }
 ```
