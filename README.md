@@ -21,6 +21,7 @@ These are my notes and code snippets from the official Go tutorial.
   15. [Maps](https://github.com/adamelliotfields/go-tutorial/blob/master/maps/README.md)
   16. [Methods](https://github.com/adamelliotfields/go-tutorial/blob/master/methods/README.md)
   17. [Interfaces](https://github.com/adamelliotfields/go-tutorial/blob/master/interfaces/README.md)
+  18. [Concurrency](https://github.com/adamelliotfields/go-tutorial/blob/master/concurrency/README.md)
 
 ### References
   - [A Tour of Go](https://tour.golang.org)
