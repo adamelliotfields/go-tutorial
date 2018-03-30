@@ -1,4 +1,4 @@
-# Loops
+# For
 
 Go only has one looping construct - the `for` loop. The basic `for` loop has three components:
   - Init: executed before the first iteration.
